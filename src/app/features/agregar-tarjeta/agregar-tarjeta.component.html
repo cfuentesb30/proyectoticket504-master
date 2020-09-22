@@ -1,0 +1,183 @@
+
+<head>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+  
+  
+      h3 {
+        text-align: center;
+        font-family: "Sofia";
+        font-size: 44px;
+      }
+
+      h4 {
+        text-align: center;
+        font-family: "Sofia";
+        font-size: 22px;
+      }
+      
+      input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+
+
+
+      </style>
+  
+  
+  </head>
+  
+  <body>
+    <h3>Agregar Nueva Tarjeta</h3>
+
+
+
+    <div class="row">
+
+    <div class="column">
+        <h4>Datos de Tarjeta</h4>
+        <form action="/action_page.php">
+          <label for="NumTarjeta">Numero de Tarjeta </label>
+          <input type="text" id="NumTarjeta" name="Nombre" placeholder="Escriba el numero de su tarjeta...">
+
+          <label for="CodigoCVV">Codigo CVV </label>
+          <input type="text" id="CodigoCVV" name="CodigoCVV" placeholder="Escriba su Codigo CVV ...">
+      
+
+
+          <h1></h1>
+        
+            
+          <label for="start">Fecha Caducidad:</label>
+
+          <input type="month" id="start" name="start"
+          min="2018-03" value="2018-05">
+        
+          <input type="submit" value="Submit">
+        </form>
+    </div>
+
+  
+
+
+    <div class="column">
+        <h4>Tus Tarjetas</h4>
+        <form action="/action_page.php">
+          
+      
+          <label for="NumeroTarjeta">Numero de Tarjeta</label>
+          <select id="numerotarjeta" name="numerotarjeta" >
+            <option value="tarjeta1">Tarjeta1</option >
+            <option value="tarjeta2">Tarjeta2</option>
+            <option value="tarjeta2">Tarjeta3</option>
+          </select>
+        
+
+
+
+          <input type="submit" value="Submit">
+        </form>
+    </div>
+
+      </div>
+
+  
+
+  <script>
+
+      $(document).ready(function(){
+        $('select').material_select();
+
+        $('.datepicker').pickdate({
+
+            selectMonths: true,
+            selectYear: true
+        });
+
+      }
+  </script>
+
+  <script>
+    
+    $("input[type='checkbox']").checkbox({
+  toggle: true
+    });
+
+</script>
+  </body>
+  
+
+
+

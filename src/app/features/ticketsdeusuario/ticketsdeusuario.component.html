@@ -1,0 +1,37 @@
+<h1>Lista de Tickets</h1>
+
+<table mat-table
+       [dataSource]="dataSource" multiTemplateDataRows
+       class="mat-elevation-z8">
+  <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
+    <th mat-header-cell *matHeaderCellDef> {{column}} </th>
+    <td mat-cell *matCellDef="let Tickets"> {{Tickets[column]}} </td>
+  </ng-container>
+
+  <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+  <ng-container matColumnDef="expandedDetail">
+    <td mat-cell *matCellDef="let Tickets" [attr.colspan]="columnsToDisplay.length">
+      <div class="example-Tickets-detail"
+           [@detailExpand]="Tickets == expandedTickets ? 'expanded' : 'collapsed'">
+        <div class="example-Tickets-diagram">
+          <div class="example-Tickets-asiento"> {{Tickets.asiento}} </div>
+          <div class="example-Tickets-categoria"> {{Tickets.categoria}} </div>
+          <div class="example-Tickets-evento"> {{Tickets.evento}} </div>
+          <div class="example-Tickets-boleto"> {{Tickets.boleto}} </div>
+        </div>
+        <div class="example-Tickets-fechayhora">
+          {{Tickets.fechayhora}}
+          <span class="example-Tickets-fechayhora-attribution"> -- Fecha y Hora </span>
+        </div>
+      </div>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+  <tr mat-row *matRowDef="let Tickets; columns: columnsToDisplay;"
+      class="example-Tickets-row"
+      [class.example-expanded-row]="expandedTickets === Tickets"
+      (click)="expandedTickets = expandedTickets === Tickets ? null : Tickets">
+  </tr>
+  <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+</table>

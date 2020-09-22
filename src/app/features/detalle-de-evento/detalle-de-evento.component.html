@@ -1,0 +1,188 @@
+
+
+<head>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+  
+  
+      h3 {
+        text-align: center;
+        font-family: "Sofia";
+        font-size: 44px;
+      }
+
+      h4 {
+        text-align: center;
+        font-family: "Sofia";
+        font-size: 22px;
+      }
+      
+      input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+}
+
+
+
+
+      </style>
+  
+  
+  </head>
+  
+  <body>
+    <h3>Detalle de Evento</h3>
+
+
+
+    <div class="row">
+
+    <div class="column">
+        <h4>Nombre de Evento</h4>
+        <form action="/action_page.php">
+
+            <label for="Genero">Filtrar por cantidad de asientos</label>
+          <select id="genero" name="genero">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <label for="Categoria">Filtrar por Categoria de Asiento</label>
+          <select id="Categoria" name="Categoria">
+            <option value="General">General</option>
+            <option value="Sol">Sol</option>
+            <option value="VIP">VIP</option>
+            <option value="Platinum">Platinum</option>
+          </select>
+
+          <h1></h1>
+          <h1></h1>
+          <h1></h1>
+          <p></p>
+
+          <label for="name">Nombre de Evento </label>
+          <input type="text" id="Nombre" name="Nombre" placeholder="Escriba el nombre del evento...">
+
+          <h1></h1>
+            <label for="FechaCreacion">Fecha Evento</label>
+            <input type="date" class="datepicker" id="FechaCreacion "name="fecha">
+          <h1>
+
+        
+          </h1>
+
+          <label for="Descripcion">Descripcion</label>
+          <input type="text" id="Descripcion" name="Descripcion" placeholder="Descripcion de Evento..">
+
+          <label for="Hora">Hora de Evento  :   </label>
+          <input type="time" id="Hora" name="Hora" placeholder="Escriba la hora del evento ..">
+          <h1></h1>
+      
+         
+
+          <label for="Precio Total">Precio Total</label>
+          <input type="text" id="PrecioTotal" name="PrecioTotal">
+          
+
+        
+          <input type="submit" value="Submit">
+        </form>
+    </div>
+
+   
+    
+    
+
+
+    <div class="column">
+        <h4>Tus Tarjetas</h4>
+        <form action="/action_page.php">
+            <img src="imagen1.jpg" alt="Ilustracion" width="500" height="600">
+      
+        
+          <input type="Submit" value="Submit">
+        </form>
+    </div>
+
+      </div>
+
+  
+
+  <script>
+    
+    $("input[type='checkbox']").checkbox({
+  toggle: true
+    });
+
+</script>
+  </body>
+  
+
+
