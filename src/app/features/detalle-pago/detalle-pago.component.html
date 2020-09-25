@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark degrado scrolling-navbar fixed-top">
         <div class="container">
-            <img src="https://gm1.ggpht.com/nnz-ip9T4ejfZpsjJYjn2fVX4AKXs9aLHr2w1HleQ_Xugq4v3Nsec9MyK9nJyzlHyhivyudU9srxOSzQ_9NOMcKZ7P8RafEN3rKru_iPYLfbjhy32Vms6Xs6Yu4mWWyEuY09sXsElRy5YW_npqrlYo_w-ERJnbRYODSuHy5JawlwBIADshC2qSC2JBzn1QWprkXW8FVRydeHK8qB1T53PdYEVldcnHG9tCijZPwwuEgwwnY2QGoOtLKcZHcral8Wys9ltjlClFuLZP-SRpSJ8k7C9m4AD16i0z3C6NbDRAyl3Hhu5bxK8fCyxYKRER_QGtXtAOncv0l-FJAPAgg1U7YP0Z1JKVPM4n8ny_KK9GPxGP8Z8e0L_5_NRp6WXi8KwC5J52oBbiyw6c5bWoj3Yl-cWJlBAwkigHxKz7d-hrN15TVQVRJaHhXRA96XiTl-9IPzu5ehOVMus5NMuKE3UIYmrw2ql1GPiTWCoIpfUyISg-j1hgKf7pSD9Wgfp1P3sZKdWkMIY7BEjn-5UVi0u5mCquveZm7pjREWtjrrHoXrRFchPJooIuPsMwqAj7xqfUulZf_FiSckn0KwdyocynO5O1g--LbeJSx1lZ0it64jM-7K00ST9mRAapxRSzgqgQLBasFG1tinl_2T1rvcq9VDZWjgocaj88wzL9g02IDSFMpHXlRRp_L6oSczhZ6eTSVF2x2DgE-nhKW2QjRb69WjX4zYX_rM3ZPo3ljLjp81Ug6zthY4F7fKPm-8Qvcbelw=s0-l75-ft-l75-ft" style="width: 150px; height: 40px; margin-right: 20px;">
+            <img src="https://i.ibb.co/QN74WyB/504-logo.png" style="width: 150px; height: 40px; margin-right: 20px;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,20 +51,21 @@
           <thead>
               <tr>
                   <th scope="col">#</th>
+                  <th scope="col"></th>
                   <th scope="col">Evento</th>
                   <th scope="col">Cantidad</th>
                   <th scope="col">Categoria</th>
                   <th scope="col">Precio</th>
-                  <th scope="col"></th>
               </tr>
           </thead>
           <tbody>
-              <tr *ngFor="let detalle of detalles">
-                  <th scope="row">{{detalle.Id}}</th>
-                 <th scope="row">{{detalle.Categoria.NombreCategoria}}</th>
-                  <th scope="row">{{detalle.Cantidad}}</th>
-                  <th scope="row">{{detalle.Categoria.NombreCategoria}}</th>
-                 <th scope="row">{{detalle.Categoria.Precio}}</th>
+              <tr>
+                  <th scope="row">1</th>
+                  <td> <img style="width: 200px; height: 100px;" src="https://i.ytimg.com/vi/8b4OAaEinBA/maxresdefault.jpg" alt="description here" /></td>
+                  <th scope="row">Vida vs Platense</th>
+                  <th scope="row">1</th>
+                  <th scope="row">Sol</th>
+                  <th scope="row">L.80</th>
               </tr>
           </tbody>
         </table>
@@ -75,19 +76,19 @@
         <div class="container">
           <div class="row">
               <div class="col" style="margin-top: 10px;">Subtotal</div>
-              <div class="col" style="margin-top: 10px; text-align: right;">L. 4000</div>
+              <div class="col" style="margin-top: 10px; text-align: right;">L. 80</div>
             </div>
             <div class="row">
               <div class="col" style="margin-top: 10px;">ISV</div>
-              <div class="col" style="margin-top: 10px; text-align: right;">L. 600</div>
+              <div class="col" style="margin-top: 10px; text-align: right;">L. 12</div>
             </div>
             <div class="row" style="margin-top: 10px;">
               <div class="col" style="font-weight: bold;">Total</div>
-              <div class="col" style="text-align: right; font-weight: bold">L. 4600</div>
+              <div class="col" style="text-align: right; font-weight: bold">L. 92</div>
             </div>
         </div>
             <div class="example-button-row">
-              <button mat-raised-button id="botonpagar">Pagar</button>
+              <button mat-raised-button id="botonpagar" routerLink="/mensajeconfirmacion">Crear ticket</button>
             </div>
     </div>
     <div class="container" style="height: 5000px;"></div>

@@ -1,0 +1,38 @@
+body{
+    background: url("../inicio/fondo.jpg");
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    body {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
+
+.degrado{
+  background-color: rgba(3, 58, 1, 0.514);
+}
+
+.top-nav-collapse{
+    background-color: rgba(0, 0, 0, 0.774) !important;
+}
+
+.tre{
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    background-color:darkkhaki;
+    font-family: 'Lucida Sans','Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 900px;
+}
