@@ -1,11 +1,11 @@
-export class Ususario{
-Id:number;
-Nomber:string;
-Apellido:string;
-Correo:string;
-Password:string;
-FechaNacimiento:number;
-Telefono:number;
-Foto:number;
-Status:string;
+export class Usuario{
+Id:Number;
+Nomber:String;
+Apellido:String;
+Correo:String;
+Password:String;
+FechaNacimiento:Number;
+Telefono:Number;
+Foto:Number;
+Status:String;
 }

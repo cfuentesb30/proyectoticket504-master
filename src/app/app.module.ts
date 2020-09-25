@@ -33,7 +33,7 @@ import {MatButtonModule} from '@angular/material/button';
     AgregarTarjetaComponent,
     DetalleDeEventoComponent,
     TablaDeEventosComponent,
-    InicioComponent,
+    InicioComponent
    // TicketsdeusuarioComponent,
   ],
   imports: [

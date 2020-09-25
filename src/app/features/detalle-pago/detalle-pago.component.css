@@ -1,9 +1,24 @@
-.fondo{
-    height: 100vh; /*vh es para que se adapte a cualquier dispositivo*/
-    background: url(https://as.com/futbol/imagenes/2017/12/15/portada/1513362392_093489_1513362513_noticia_normal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+body{
+    background: url("../inicio/fondo.jpg");
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    body {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
 
 .degrado{
     background-color: rgba(0, 0, 0, 0.199);
