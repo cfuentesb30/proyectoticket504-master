@@ -6,11 +6,10 @@ import {Carrito} from '../models/Carrito';
   providedIn: 'root'
 })
 export class DetallePagoService {
-  apiURL='https://localhost:5001/api/carritos';
 
   constructor(private http: HttpClient) { }
 
   obtenerDetalles(){
-    return this.http.get<Carrito[]>(this.apiURL);
   }
 }
+

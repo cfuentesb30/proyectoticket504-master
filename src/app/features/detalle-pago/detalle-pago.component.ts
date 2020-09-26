@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {DetallePagoService} from 'src/app/services/detalle-pago.service';
-import { Carrito} from 'src/app/models/Carrito';
+import{Router} from '@angular/router'
 
 
 @Component({
@@ -9,18 +8,12 @@ import { Carrito} from 'src/app/models/Carrito';
   styleUrls: ['./detalle-pago.component.css']
 })
 export class DetallePagoComponent implements OnInit {
-  detalles: Carrito[];
 
-  constructor(private _detallepagoservice: DetallePagoService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.obtenerDetalles();
   }
 
-  obtenerDetalles(){
-    this._detallepagoservice.obtenerDetalles().subscribe(data => {
-      this.detalles=data;
-    })
-  }
+
 
 }

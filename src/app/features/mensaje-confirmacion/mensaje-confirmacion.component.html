@@ -1,1 +1,58 @@
-<p>mensaje-confirmacion works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark degrado scrolling-navbar fixed-top">
+        <div class="container">
+            <img src="https://i.ibb.co/QN74WyB/504-logo.png" style="width: 150px; height: 40px; margin-right: 20px;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/tabladeeventos">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/contactanos">Contactanos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="/detallepago">Carrito<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Perfil
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" routerLink="/editarperfil">Editar Perfil</a>
+                            <a class="dropdown-item" href="#">Cerrar Sesion</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h1 style="margin-top: 100px;">¡Gracias por tu compra!</h1>
+        <p>Toma foto de tu ticket para presentarlo en ventanilla</p>
+    </div>
+
+    <div class="container" style="background-image: url(https://i.ibb.co/HKzPDDm/boleto.png); width: 635px; height: 230px; justify-content:center;">
+    </div>
+
+</body>
+</html>

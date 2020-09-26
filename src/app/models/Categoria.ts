@@ -1,6 +1,6 @@
 export class Categoria{
-    Id: number;
-    NombreCategoria: string;
-    Precio:number;
-    CantidadBoletos: number;
+    Id: Number;
+    NombreCategoria: String;
+    Precio:Number;
+    CantidadBoletos: Number;
 }
