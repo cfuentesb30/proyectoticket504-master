@@ -122,4 +122,7 @@
     }
   },
   "defaultProject": "proyecto",
+  "cli": {
+    "analytics": false
+  }
 }
