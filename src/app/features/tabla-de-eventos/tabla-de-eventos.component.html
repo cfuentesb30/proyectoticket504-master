@@ -2,10 +2,23 @@
 <html lang="en">
 
   <head>
+
+
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+
+<title>Bootstrap 4 Card</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
     <style>
   
   
@@ -78,7 +91,17 @@ input[type=submit]:hover {
     width: 100%;
   }
 
+
+  
+
 }
+
+
+
+
+
+    
+
 </style>
 </head>
 
@@ -120,44 +143,229 @@ input[type=submit]:hover {
     </div>
 </nav>
 
+
+
+
+
     <h3 style="padding-top: 100px;">Tabla de Eventos</h3>
+
+    <div class="spinner-grow text-primary">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-secondary">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-success">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-danger">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-warning">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-info">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-light">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-dark">
+      <span class="sr-only">Loading...</span>
+    </div>
+    
 
     <div class="row" >
 
     <div class="column" >
-        <h4>Nombre de Evento</h4>
-        <form action="/action_page.php">
+      <div class="bs-example">
+        <div class="card" style="width: 300px;">
 
-            <label for="Genero">Filtrar por Categoria de Eventos</label>
-          <select id="genero" name="genero">
-            <option value="Deportivo">Deportivo</option>
-            <option value="Cultural">Cultural</option>
-            <option value="Recaudacion de Fondos">Recaudacion de Fondos</option>
-           
-          </select>
-          <label for="Ciudad">Filtrar por Ciudad</label>
-          <select id="Ciudad" name="Ciudad">
-            <option value="San Pedro Sula">General</option>
-            <option value="Puerto Cortes">Sol</option>
-            <option value="Tegucigalpa">VIP</option>
-            <option value="La Ceiba">Platinum</option>
-          </select>
-
-          <input type="submit" value="Submit">
-        </form>
+      
+          <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/08/4a/ec/084aec15-b456-cab1-cc79-cb5bcd949ca6/source/256x256bb.jpg" alt="Team">
+            
+            <div class="card-body text-center">
+                <h5 class="card-title">FUTBOL</h5>
+                <h5>SC Fortuna Köln vs. 1.FC Köln II</h5>
+                <p class="card-text"> Dia y Hora:  Domingo, 13:00</p>
+                
+                <a href="#" class="btn btn-primary stretched-link">Ver Evento</a>
+            </div>
+        </div>
+      </div>
+      
     </div>
   
-    <div class="column">
-        <h4>Reporteria</h4>
-        <form action="/action_page.php">
-            <img src="imagen1.jpg" alt="Reporte" width="500" height="600">
+    
+    <div class="column" >
+      <div class="bs-example">
+        <div class="card" style="width: 300px;">
+
       
-        
-          <input type="Submit" value="Submit">
-        </form>
+          <img src="https://pbs.twimg.com/profile_images/413821231276638209/0KzSa68s.jpeg" alt="Team">
+            
+            <div class="card-body text-center">
+                <h5 class="card-title">BASEBALL</h5>
+                <h5>Boston Celtics Vrs Miami Heat</h5>
+                <p class="card-text"> Dia y Hora:  Today, 20:00</p>
+                
+                <a href="#" class="btn btn-primary stretched-link">Ver Evento</a>
+            </div>
+        </div>
+      </div>
+      
     </div>
+
+
       </div>
 
+
+
+      <div class="row" >
+
+        <div class="column" >
+          <div class="bs-example">
+            <div class="card" style="width: 300px;">
+    
+          
+              <img src="https://2.bp.blogspot.com/-LuLw0MHxQsY/W-gBaqibTPI/AAAAAAABSb8/UDaLFxClcUYT-Hn2nTXR-eDlw90wDN3bgCLcBGAs/s1600/Club%2BPuebla256x.png" alt="Team">
+                
+                <div class="card-body text-center">
+                    <h5 class="card-title">FUTBOL</h5>
+                    <h5>Puebla Vrs Queretaro</h5>
+                    <p class="card-text"> Dia y Hora:  Lunes, 18:30</p>
+                    
+                    <a href="#" class="btn btn-primary stretched-link">Ver Evento</a>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+      
+        <div class="column" >
+          <div class="bs-example">
+            <div class="card" style="width: 300px;">
+    
+          
+              <img src="https://www.latingoles.com/wp-content/uploads/2020/06/FC-Internazionale.png" alt="Team">
+                
+                <div class="card-body text-center">
+                    <h5 class="card-title">FUTBOL</h5>
+                    <h5>Inter Vrs Fiorentina</h5>
+                    <p class="card-text"> Dia y Hora:  Lunes, 18:30</p>
+                    
+                    <a href="#" class="btn btn-primary stretched-link">Ver Evento</a>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+    
+    
+          </div>
+
+
+
+          <div class="row" >
+
+            <div class="column" >
+              <div class="bs-example">
+                <div class="card" style="width: 300px;">
+        
+              
+                  <img src="https://pbs.twimg.com/profile_images/378800000724167727/f99f3a43dcb9345b1a01cb66b4ee2f25.jpeg" alt="Team">
+                    
+                    <div class="card-body text-center">
+                        <h5 class="card-title">CONCIERTOS</h5>
+                        <h5>Alejandro Fernandez</h5>
+                        <p class="card-text"> Dia y Hora:  Jueves, 10:00</p>
+                        
+                        <a href="#" class="btn btn-primary stretched-link">Ver Evento</a>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+          
+            
+            <div class="column" >
+              <div class="bs-example">
+                <div class="card" style="width: 300px;">
+        
+              
+                  <img src="https://m.media-amazon.com/images/I/51cpc3fSgPL._AA256_.jpg" alt="Team">
+                    
+                    <div class="card-body text-center">
+                        <h5 class="card-title">CONCIERTOS</h5>
+                        <h5>Beyonce</h5>
+                        <p class="card-text"> Dia y Hora:  Today, 20:00</p>
+                        
+                        <a href="#" class="btn btn-primary stretched-link">Ver Evento</a>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+      
+        
+              </div>
+
+
+              
+          <div class="row" >
+
+            <div class="column" >
+              <div class="bs-example">
+                <div class="card" style="width: 300px;">
+        
+              
+                  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a504c732-2487-47cd-9380-d08f32a02454/da08kg4-2b6e0558-789f-43a5-a287-8339a6290a11.png/v1/fill/w_256,h_256,strp/peter_pan_folder_icon_by_dahlia069_da08kg4-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0yNTYiLCJwYXRoIjoiXC9mXC9hNTA0YzczMi0yNDg3LTQ3Y2QtOTM4MC1kMDhmMzJhMDI0NTRcL2RhMDhrZzQtMmI2ZTA1NTgtNzg5Zi00M2E1LWEyODctODMzOWE2MjkwYTExLnBuZyIsIndpZHRoIjoiPD0yNTYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Nh9mRnLi8UCEFMwIE8HZhvIGmoXSa9ZI9qEk_NNQmW8" alt="Team">
+                    
+                    <div class="card-body text-center">
+                        <h5 class="card-title">TEATRO</h5>
+                        <h5>Peter Pan</h5>
+                        <p class="card-text"> Dia y Hora:  Lunes, 10:00</p>
+                        
+                        <a href="#" class="btn btn-primary stretched-link">Ver Evento</a>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+          
+            
+            <div class="column" >
+              <div class="bs-example">
+                <div class="card" style="width: 300px;">
+        
+              
+                  <img src="https://i.pinimg.com/originals/68/c1/43/68c143b4343048002da2cb6629c11e1c.jpg" alt="Team">
+                    
+                    <div class="card-body text-center">
+                        <h5 class="card-title">TEATRO</h5>
+                        <h5>Una obra de Peter Zain</h5>
+                        <p class="card-text"> Dia y Hora:  Today, 20:00</p>
+                        
+                        <a href="#" class="btn btn-primary stretched-link">Ver Evento</a>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+        
+            
+        
+              </div>
+
+
+
+     
+
+      
+
+      
+
+      
   <script>
     
     $("input[type='checkbox']").checkbox({
